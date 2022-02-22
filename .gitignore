@@ -1,1 +1,33 @@
+#pictures
 *.psd
+*.ai
+*.jpg
+*.gif
+*.bmp
+
+*.pdf
+
+#django
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files # 
+*.bak 
+
+# pycharms
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# AWS
+.idea/**/aws.xml
+
+#sound
+*.waf
+*.mp3
