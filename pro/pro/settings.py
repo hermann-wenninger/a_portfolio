@@ -18,6 +18,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+<<<<<<< HEAD
 import os
 import dotenv # <- New
 
@@ -28,6 +29,9 @@ if os.path.isfile(dotenv_file):
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
+=======
+
+>>>>>>> 59a7015bb14d2d675f5c27bf89dc4356ae61641d
 DEBUG = True
 
 ALLOWED_HOSTS = []
