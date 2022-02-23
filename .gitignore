@@ -34,3 +34,5 @@ media
 
 #secret
 secret_key.py
+
+.env
