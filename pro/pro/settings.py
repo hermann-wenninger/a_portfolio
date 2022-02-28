@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 
 
@@ -18,8 +19,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-<<<<<<< HEAD
-import os
 import dotenv # <- New
 
 # Add .env variables anywhere before SECRET_KEY
@@ -29,13 +28,10 @@ if os.path.isfile(dotenv_file):
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-=======
-
->>>>>>> 59a7015bb14d2d675f5c27bf89dc4356ae61641d
-DEBUG = True
 
 
 
+ALLOWE_HOSTS = ['localhost']
 
 
 INSTALLED_APPS = [
@@ -45,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # my party
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +127,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEBUG = True
