@@ -34,7 +34,6 @@ SECRET_KEY = os.environ['SECRET_KEY']
 >>>>>>> 59a7015bb14d2d675f5c27bf89dc4356ae61641d
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 
